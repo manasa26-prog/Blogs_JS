@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Blogs Page</title> 
+        <link rel="stylesheet" href="style.css">
+     </head> 
+     <body> 
+        <div id="title-bar">
+             <div id="page-title">Centre of Blogs</div>
+              <nav> 
+                <ul>
+                     <li><a href="#home">Home</a>
+                    </li> <li><a href="#blogs">Blogs</a>
+                    </li> <li><a href="#contact">Contact Us</a></li>
+                 </ul> 
+                </nav>
+             </div> 
+             <div class="Blog-Container"> 
+                <div id="Add-new-blog"> 
+                    <button id="add-blog-btn">Add New Blog</button></div> 
+                    <div id="blog-list"> </div>
+                 </div> 
+                 <!-- add /editblogs --> 
+                  <div id="blog-modal" style="display: none;"> 
+                    <h2 id="modal-title"></h2> 
+                    <form id="blog-form"> 
+                        <label for="title">Title:</label>
+                         <input type="text" id="title" name="title"><br><br> 
+                         <label for="content">Content:</label> 
+                         <textarea id="content" name="content"></textarea><br><br>
+                          <button id="save-blog-btn">Save</button>
+                           <button id="cancel-btn">Cancel</button> 
+                        </form> 
+                    </div> 
+                    <!-- viewi blog --> 
+                     <div id="blog-content-modal" style="display: none;"> 
+                        <div id="blog-content">
+
+                        </div>
+                         <button id="close-blog-content-btn">Close</button> </div> 
+                         <script src="script.js"></script>
+                         </body> 
+</html>

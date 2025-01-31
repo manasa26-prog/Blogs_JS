@@ -1,0 +1,138 @@
+.Blog-Container 
+{ background-color: rgb(48, 101, 216); 
+    display: flex;
+     flex-direction: column;
+      align-items: center;
+       padding: 20px; height: 80%; 
+       justify-content: space-between; 
+}
+ #blog-list 
+ { 
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
+} 
+.blog-block 
+{ 
+    background-color: rgb(219, 227, 235);
+    padding: 20px;
+    margin: 20px; 
+    width: calc(33% - 40px); 
+    box-sizing: border-box; 
+    border-radius: 8px; 
+    display: flex; 
+    flex-direction: column;
+}
+.view-count
+ { 
+     font-weight: bold; 
+} 
+#blog-modal 
+{ 
+     position: fixed; 
+     top: 50%;
+     left: 50%; 
+     transform: translate(-50%, -50%); 
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    background-color: white; width: 400px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+} 
+#blog-modal form 
+{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+ button 
+ {
+    background: none;
+    border: none; 
+    cursor: pointer;
+    font-size: 16px; 
+    color: #007BFF;
+}
+#title-bar
+{ 
+    background-color: #212fa8; 
+    padding: 10px 0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-left: 20px;
+    padding-right: 20px;
+} 
+#page-title 
+{ 
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+} 
+nav ul 
+{ list-style-type: none; 
+    padding: 0;
+     margin: 0; 
+     display: flex;
+      justify-content: center;
+     } 
+nav ul li 
+{ 
+    margin: 0 20px; 
+} 
+nav ul li a 
+{ 
+    color: white;
+     text-decoration: none;
+     font-size: 18px; 
+     font-weight: bold;
+      padding: 10px 15px; 
+      display: inline-block; 
+} nav ul li a:hover 
+{ 
+    background-color: #ddd; 
+    color: #333;
+     border-radius: 5px;
+ } 
+ #tag
+ { font-size:x-large;
+     position: absolute; 
+     color: white;
+      justify-content: center;
+     }
+      #Add-new-blog 
+      {
+         width: auto; 
+         display: flex; 
+         justify-content: center; 
+         position: fixed; 
+         bottom: 20px; 
+         right: 20px; 
+         background-color: rgb(156, 176, 241); 
+         border-radius: 8px;
+         } 
+         #add-blog-btn 
+         { padding: 10px 20px; 
+            font-size: 14px;
+             background-color: #2d53bd; 
+             color: rgb(158, 196, 247); 
+             border: none; 
+             border-radius: 5px;
+             } 
+             #blog-content-modal
+             {
+                 height:40%;
+                 }
+                  @media 
+                  (max-width: 768px)
+                   { 
+                    .blog-block
+                     { width: calc(50% - 40px);
+                     }
+                     } 
+                     @media (max-width: 480px) 
+                     { .blog-block 
+                        { width: 100%; 
+                    }
+                     }
